@@ -27,11 +27,45 @@ div.container-fluid {
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
 }
 
-    #logo {
+    #logo-com-texto {
         width: 80%;
     }
 
+    #logo-sem-texto {
+        width: 185px;
+    }
+
+    h1, h2 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        line-height: 1.50em;
+        color: #ffffff;
+        text-shadow: 2px 2px 10px #050505;
+    }
+
     h1 {
+        font-size: 55px;
+    }
+
+        /* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
+        @media screen and (min-width: 601px) {
+            div.example {
+            font-size: 80px;
+            }
+        }*/
+        
+        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
         font-family: 'Pacifico', cursive;
         font-weight: 400;
         font-size: 48px;
@@ -39,12 +73,16 @@ div.container-fluid {
         line-height: 1.00em;
     }
 
-    h2 {
+    h4 {
         font-family: Helvetica, Arial, sans-serif;
         font-weight: 400;
         font-size: 20px;
         line-height: 1.50em;
         color: #ffffff;
+    }
+
+    .icones-topo {
+        color: rgb(209, 145, 25);
     }
 
     .seperate .input-group .form-control:first-child,
@@ -59,6 +97,9 @@ div.container-fluid {
     .form-control {
         background-color: rgba(255, 255, 255, 0.85);
     }
+        #email {
+            border: 1px solid #fff !important;
+        }
 
         #subscribe-btn {
             background: transparent;
