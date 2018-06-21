@@ -5,16 +5,13 @@ html, body {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
-    color: #fff;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.23) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%);
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3b000000',GradientType=1 );
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .bg { 
-    background: #ffffff url(../images/bg12.jpg);
+    /* background: #ffffff url(../images/criancas5.jpg); */
+    /* background: #ffffff url(../images/bg9.jpg); */
+    background: #ffffff url(../images/bg3.jpg);
     /* background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bfb59a246c6092ff0daabd284b); */
 
     -webkit-background-position: center;
@@ -60,19 +57,20 @@ div.container-fluid {
         margin-top: -50px;
     }
 
-    h1, h2 {
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: 600;
-        line-height: 1.50em;
-        color: #ffffff;
+    h1, h2, h3, h4 {
         -webkit-text-shadow: 2px 2px 10px #050505;
         -moz-text-shadow: 2px 2px 10px #050505;
         -o-text-shadow: 2px 2px 10px #050505;
         text-shadow: 2px 2px 10px #050505;
     }
 
+    h1, h2 {
+        font-family: "Baloo Da", Helvetica, Arial, sans-serif;
+    }
+
     h1 {
         font-size: 55px;
+        color: #ffffff;
     }
 
         /* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
@@ -91,22 +89,27 @@ div.container-fluid {
 
     h2 {
         font-size: 15px;
+        color: rgb(216, 187, 135);
+    }
+
+    h3, h4 {
+        font-family: 'Luckiest Guy', cursive;
+        font-weight: 400;
+        color: rgb(48, 48, 58);
+        -webkit-text-shadow: 2px 2px 10px #fff;
+        -moz-text-shadow: 2px 2px 10px #fff;
+        -o-text-shadow: 2px 2px 10px #fff;
+        text-shadow: 2px 2px 10px #fff;
     }
 
     h3 {
-        font-family: 'Pacifico', cursive;
-        font-weight: 400;
         font-size: 48px;
-        color: #ffffff;
         line-height: 1.00em;
     }
 
     h4 {
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: 400;
         font-size: 20px;
         line-height: 1.50em;
-        color: #ffffff;
     }
 
     #cards-container{
@@ -119,7 +122,7 @@ div.container-fluid {
         }
 
     .icones-topo {
-        color: rgb(209, 145, 25);
+        color: rgb(216, 187, 135);
     }
 
     .seperate .input-group .form-control:first-child,
@@ -135,27 +138,31 @@ div.container-fluid {
         background-color: rgba(255, 255, 255, 0.85);
     }
         #email {
-            border: 1px solid #fff !important;
+            border: 1px solid #999 !important;
         }
 
         #subscribe-btn {
             background: transparent;
-            border: 1px solid #fff !important;
-            color: #fff;
+            border: 1px solid #999 !important;
+            color: rgb(7, 8, 29);
         }
 
         #subscribe-btn:hover {
-            background: rgba(255,255,255,0.2);
-            color: #fff;
+            background: rgba(255,255,255,0.3);
+            color: rgb(7, 8, 29)
         }
 
     #privacy-policy-txt {
         display: inline-block;
         font-size: 11px;
+        -webkit-text-shadow: 2px 2px 10px #050505;
+        -moz-text-shadow: 2px 2px 10px #050505;
+        -o-text-shadow: 2px 2px 10px #050505;
+        text-shadow: 2px 2px 10px #050505;
     }
 
     #socialprofiles, a,
     #socialprofiles, a:hover {
-        color: #fff;
+        color: rgb(209, 145, 25);
         font-size: 1.5em;
     }
