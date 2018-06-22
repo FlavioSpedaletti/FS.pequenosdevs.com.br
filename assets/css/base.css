@@ -73,14 +73,6 @@ div.container-fluid {
         color: #ffffff;
     }
 
-        /* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
-        @media screen and (min-width: 601px) {
-            div.example {
-            font-size: 80px;
-            }
-        }*/
-        
-        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
         @media screen and (max-width: 600px) {
             h1 {
                 font-size: 35px;
@@ -110,19 +102,28 @@ div.container-fluid {
     h4 {
         font-size: 20px;
         line-height: 1.50em;
+        background-color: rgb(216, 187, 135);
+        display: table;
+        margin: 0 auto;
     }
 
     #cards-container{
-        color: #000000;
+        color: rgb(48, 48, 58);
     }
 
         #cards-container i{
-            color: #000000;
+            color: rgb(48, 48, 58);
             font-size: 30px;
         }
 
     .icones-topo {
         color: rgb(216, 187, 135);
+    }
+
+    @media screen and (min-width: 768px) {
+        form#inscricao {
+            margin: 0 200px;
+        }
     }
 
     .seperate .input-group .form-control:first-child,
