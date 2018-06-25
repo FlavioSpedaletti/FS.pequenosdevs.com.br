@@ -5,12 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108390521-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-108390521-1');
+        </script>
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Arvo|Luckiest+Guy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Luckiest+Guy|Chelsea+Market" rel="stylesheet">
 
         <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
         <title>Pequenos DEVS - Programação de computadores e robótica</title>
     </head>
@@ -24,7 +35,7 @@
                         <div class="col-12 align-self-center">
                             <img id="logo-sem-texto" src="assets/images/pequenosdevs-sem-texto.png">
                             <h1>Pequenos DEVS</h1>
-                            <h2>
+                            <h2 class="animated bounceInDown">
                                 Programação e robótica para crianças
                                 <span class="icones-topo d-block d-xl-inline">
                                     <i class="fas fa-child"></i>
@@ -35,7 +46,7 @@
                         </div>
                     </div>
 
-                    <h3 class="mb-5">Porque aprender a programar?</h3>
+                    <h3 class="mb-5">Por que aprender a programar?</h3>
 
                     <div class="row mb-5 card-group" id="cards-container">
                             <div class="card mx-2 mx-xl-4">
@@ -59,7 +70,7 @@
                     </div>
 
                     <h4 class="mb-3">Vem novidade por aí! Se inscreva para receber as novidades!</h4>
-                    <form action="" method="post" class="mb-3" id="inscricao">
+                    <!-- <form action="" method="post" class="mb-3" id="inscricao">
                         <div class="row no-gutters">
                             <div class="col-12 input-group">
                                 <input id="email" name="EMAIL" class="form-control" type="email" placeholder="Email" required="">
@@ -68,7 +79,25 @@
                                 </div>
                             </div>
                         </div>
+                    </form> -->
+
+                    <!-- Begin MailChimp Signup Form -->
+                    <form action="https://pequenosdevs.us6.list-manage.com/subscribe/post?u=18e2fc7e21a7d8a9f1a2aa933&amp;id=fb93b0ba15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mb-3" target="_blank">
+                        <div id="row no-gutters">
+                            <div class="col-12 input-group">
+                                <input id="mce-email" name="EMAIL" class="form-control" type="email" placeholder="Email" required="">
+                                <div class="input-group-append">
+                                    <input type="submit" value="Me avise" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg">
+                                </div>
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e2fc7e21a7d8a9f1a2aa933_fb93b0ba15" tabindex="-1" value=""></div>
+                            </div>
+                        </div>
                     </form>
+                    <!--End mc_embed_signup-->
+
                     <span id="privacy-policy-txt" class="mb-4">Prometemos não mandar spam.</span>
                     <div id="socialprofiles">
                         <a href="https://www.youtube.com/PequenosDEVS" target="_blank"><i class="fab fa-youtube-square"></i></a>
@@ -82,8 +111,8 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script src="assets/js/base.js"></script>

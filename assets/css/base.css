@@ -5,14 +5,11 @@ html, body {
 }
 
 body {
-    font-family: Arvo, Helvetica, sans-serif;
+    font-family: 'Chelsea Market', Helvetica, sans-serif;
 }
 
 .bg { 
-    /* background: #ffffff url(../images/criancas5.jpg); */
-    /* background: #ffffff url(../images/bg9.jpg); */
     background: #ffffff url(../images/bg3.jpg);
-    /* background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bfb59a246c6092ff0daabd284b); */
 
     -webkit-background-position: center;
     -moz-background-position: center;
@@ -65,7 +62,7 @@ div.container-fluid {
     }
 
     h1, h2 {
-        font-family: "Baloo Da", Helvetica, Arial, sans-serif;
+        font-family: 'Baloo Da', Helvetica, Arial, sans-serif;
     }
 
     h1 {
@@ -107,13 +104,19 @@ div.container-fluid {
         margin: 0 auto;
     }
 
-    #cards-container{
+    #cards-container {
         color: rgb(48, 48, 58);
     }
 
-        #cards-container i{
+        #cards-container i {
             color: rgb(48, 48, 58);
             font-size: 30px;
+        }
+
+        #cards-container .card-body {
+            -webkit-box-shadow: 8px 8px 23px 0px rgba(0,0,0,0.51);
+            -moz-box-shadow: 8px 8px 23px 0px rgba(0,0,0,0.51);
+            box-shadow: 8px 8px 23px 0px rgba(0,0,0,0.51);
         }
 
     .icones-topo {
@@ -121,7 +124,7 @@ div.container-fluid {
     }
 
     @media screen and (min-width: 768px) {
-        form#inscricao {
+        form#inscricao, form#mc-embedded-subscribe-form {
             margin: 0 200px;
         }
     }
@@ -138,17 +141,17 @@ div.container-fluid {
     .form-control {
         background-color: rgba(255, 255, 255, 0.85);
     }
-        #email {
+        #email, #mce-email {
             border: 1px solid #999 !important;
         }
 
-        #subscribe-btn {
+        #subscribe-btn, #mc-embedded-subscribe {
             background: transparent;
             border: 1px solid #999 !important;
             color: rgb(7, 8, 29);
         }
 
-        #subscribe-btn:hover {
+        #subscribe-btn:hover, #mc-embedded-subscribe:hover {
             background: rgba(255,255,255,0.3);
             color: rgb(7, 8, 29)
         }
