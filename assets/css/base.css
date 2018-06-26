@@ -92,7 +92,7 @@ div.container-fluid {
     }
 
     h3 {
-        font-size: 48px;
+        font-size: 37px;
         line-height: 1.00em;
     }
 
@@ -146,13 +146,13 @@ div.container-fluid {
         }
 
         #subscribe-btn, #mc-embedded-subscribe {
-            background: transparent;
+            background: rgba(255,255,255,0.3);
             border: 1px solid #999 !important;
             color: rgb(7, 8, 29);
         }
 
         #subscribe-btn:hover, #mc-embedded-subscribe:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(230,230,230,0.8);
             color: rgb(7, 8, 29)
         }
 
@@ -162,7 +162,7 @@ div.container-fluid {
         -webkit-text-shadow: 2px 2px 10px #050505;
         -moz-text-shadow: 2px 2px 10px #050505;
         -o-text-shadow: 2px 2px 10px #050505;
-        text-shadow: 2px 2px 10px #050505;
+        text-shadow: 1px 1px 7px #666;
     }
 
     #socialprofiles, a,
