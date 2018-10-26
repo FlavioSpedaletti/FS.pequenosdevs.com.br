@@ -17,15 +17,21 @@
         <meta property="fb:admins" content="PequenosDevs"/>
         <meta property="article:publisher" content="https://www.facebook.com/pequenosdevs"/>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108390521-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <!-- Page hiding snippet (recommended) - Google Optimize  -->
+        <style>.async-hide { opacity: 0 !important} </style>
+        <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+        {'GTM-T73FSSJ':true});</script>
 
-            gtag('config', 'UA-108390521-1');
-        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T73FSSJ');</script>
+        <!-- End Google Tag Manager -->
 
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
@@ -34,31 +40,14 @@
 
         <link rel="stylesheet" href="assets/css/base.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-        <!-- Mailchimp -->
-        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/18e2fc7e21a7d8a9f1a2aa933/5862df247b12d76d0fa28bfd1.js");</script>
-        
-        <!-- Facebook Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '475357562944247');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=475357562944247&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
-
         
     </head>
     <body class="bg">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T73FSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
         <div class="container-fluid pt-3">
             <div class="row text-center">
                 <div class="col"></div>
@@ -82,24 +71,24 @@
                     <h3 class="mb-5">Por que ensinar programação para crianças?</h3>
 
                     <div class="row mb-5 card-group" id="cards-container">
-                            <div class="card mx-2 mx-xl-4">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fas fa-child"></i></h5>
-                                    <p class="card-text">É a alfabetização básica na era digital. Lembre-se: "Um novo mundo cria novas necessidades".</p>
-                                </div>
+                        <div class="card mx-2 mx-xl-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-child"></i></h5>
+                                <p class="card-text">É a alfabetização básica na era digital. Lembre-se: "Um novo mundo cria novas necessidades".</p>
                             </div>
-                            <div class="card mx-2 mx-xl-4">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fas fa-robot"></i></h5>
-                                    <p class="card-text">Incentiva o aprendizado de outras disciplinas, como matemática, física e inglês, além de estimular o raciocínio lógico.</p>
-                                </div>
+                        </div>
+                        <div class="card mx-2 mx-xl-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-robot"></i></h5>
+                                <p class="card-text">Incentiva o aprendizado de outras disciplinas, como matemática, física e inglês, além de estimular o raciocínio lógico.</p>
                             </div>
-                            <div class="card mx-2 mx-xl-4">
-                                <div class="card-body">
-                                    <h5 class="card-title"><i class="fas fa-gamepad"></i></h5>
-                                    <p class="card-text">Aprende-se a resolver problemas com mais facilidade, o que auxilia no desenvolvimento pessoal e profissional.</p>
-                                </div>
+                        </div>
+                        <div class="card mx-2 mx-xl-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-gamepad"></i></h5>
+                                <p class="card-text">Aprende-se a resolver problemas com mais facilidade, o que auxilia no desenvolvimento pessoal e profissional.</p>
                             </div>
+                        </div>
                     </div>
 
                     <h4 class="mb-3">Vem novidade por aí! Se inscreva para receber as novidades!</h4>
