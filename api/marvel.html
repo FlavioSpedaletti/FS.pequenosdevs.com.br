@@ -19,7 +19,7 @@
             const url = `https://gateway.marvel.com/v1/public/characters?limit=${limit}&ts=${ts}&apikey=${apikey}&hash=${hash}`;
             
             var promises = [];
-            for (var i=1;i<=1490;i++) {
+            for (var i=0;i<=1490;i++) {
                 const offset = Math.floor(Math.random() * 1489) + 1;
                 
                 promises.push(fetch(`${url}&offset=${i}`)
